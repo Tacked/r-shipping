@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="border.md">
+
+  <title>R-shipping</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 p-0">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <div class="sign-button d-block d-sm-none"><a href="login.html">Sign In</a></div>
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="#offcanvasExample" data-bs-toggle="offcanvas" role="button"
+                  aria-controls="offcanvasExample">Calculator</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li>
+                <div class="sign-button"><a href="login.html">Sign In</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+
+            <div class="banner-image">
+              <img src="assets/images/banner-right-image.png" alt="">
+            </div>
+
+            <div class="col-lg-6 align-self-center">
+              <div class="item header-text wow fadeIn">
+                <h2>Digital <em>tracking</em> system</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet unde voluptate eos labore, aliquid
+                  natus. Iusto!</p>
+              </div>
+            </div>
+
+            <div class="col-lg-9 align-self-center">
+              <div class="toggle-slider">
+                <ul class="nav" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#tracking"
+                      type="button" role="tab" aria-controls="home" aria-selected="true"><img
+                        src="assets/images/001-delivery.svg" alt="">Tracking</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#order" type="button"
+                      role="tab" aria-controls="profile" aria-selected="false"><img src="assets/images/002-sent.svg"
+                        alt="">Order shipping</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+
+                  <div class="tab-pane fade show active" id="tracking" role="tabpanel" aria-labelledby="tracking-tab">
+                    <div class="tracking-tabs">
+                      <form id="tracking" action="" method="get">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <input type="text" name="tracking" id="tracking" placeholder="Container Number" required="">
+                          </div>
+                          <div class="col-sm-4">
+                            <select aria-label="Default select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-2 d-flex justify-content-sm-end">
+                            <a type="submit" id="form-submit" class="main-button">Search</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
+                    <div class="order-tabs">
+                      <form id="order" action="" method="get">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <p>Personal Information:</p>
+                          </div>
+                          <div class="col-sm-4">
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name" required="">
+                            <input type="email" name="email" id="email" placeholder="E-mail Adress" required="">
+                          </div>
+                          <div class="col-sm-4">
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required="">
+                          </div>
+                          <hr>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <p>Billing Information:</p>
+                          </div>
+                          <div class="col-sm-4">
+                            <input type="text" name="company" id="company" placeholder="Company" required="">
+                          </div>
+                          <div class="col-sm-4">
+                            <input type="number" name="number" id="number" placeholder="Phone Number" required="">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3"></div>
+                          <div class="col-sm-8">
+                            <button type="submit" id="form-submit" class="main-button">Send Order</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section wow fadeIn">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 d-lg-block d-md-none  align-self-center">
+          <div class="left-image">
+            <img src="assets/images/about-image.jpg" alt="Container ship">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="right-text">
+            <div class="section-heading">
+              <h2>Welcome to R-shipping, <em>digital shipping company</em>.</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsam ullam quidem ipsum enim, mollitia
+                tempora maxime laudantium ipsa nihil necessitatibus qui labore optio itaque earum temporibus.</p>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="fact-item">
+                    <div class="count-area-content">
+                      <div class="count-digit">20+</div>
+                      <div class="count-title">Cuntries</div>
+                      <p>Lorem ipsum dolor sitti amet, consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="fact-item">
+                    <div class="count-area-content">
+                      <div class="count-digit">100+</div>
+                      <div class="count-title">Warehouses</div>
+                      <p>Lorem ipsum dolor sitti amet, consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="fact-item">
+                    <div class="count-area-content">
+                      <div class="count-digit">80+</div>
+                      <div class="count-title">Terminals</div>
+                      <p>Lorem ipsum dolor sitti amet, consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="serices" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Services</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-0">
+          <div class="owl-carousel owl-services">
+            <div class="item">
+              <div class="thumb wow fadeIn">
+                <img src="assets/images/014-worldwide shipping.svg" alt="">
+                <h4>Import/Export FCL</h2>
+                  <p class="services-card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quisquam
+                    laboriosam porro at
+                    officia, laborum, esse tenetur ipsum, nemo illum voluptatum?</p>
+                  <a class="show-more-link" href="#">show more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb wow fadeIn">
+                <img src="assets/images/039-storage.svg" alt="">
+                <h4>Import/Export LCL</h2>
+                  <p class="services-card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quisquam
+                    laboriosam porro at
+                    officia, laborum, esse tenetur ipsum, nemo illum voluptatum?</p>
+                  <a class="show-more-link" href="#">show more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb wow fadeIn">
+                <img src="assets/images/085-secure.svg" alt="">
+                <h4>CIF</h2>
+                  <p class="services-card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quisquam
+                    laboriosam porro at
+                    officia, laborum, esse tenetur ipsum, nemo illum voluptatum?</p>
+                  <a class="show-more-link" href="#">show more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb wow fadeIn">
+                <img src="assets/images/004-cargo.svg" alt="">
+                <h4>CFR</h2>
+                  <p class="services-card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quisquam
+                    laboriosam porro at
+                    officia, laborum, esse tenetur ipsum, nemo illum voluptatum?</p>
+                  <a class="show-more-link" href="#">show more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb wow fadeIn">
+                <img src="assets/images/019-delivery box.svg" alt="">
+                <h4>Comanda Marfei</h2>
+                  <p class="services-card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quisquam
+                    laboriosam porro at
+                    officia, laborum, esse tenetur ipsum, nemo illum voluptatum?</p>
+                  <a class="show-more-link" href="#">show more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="news" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Latest News</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row p-0">
+
+        <!-- Post Item 1 -->
+        <div class="col-md-12 wow fadeIn pl-0">
+          <div class="row">
+
+            <div class="col-md-4 blog2-post-title-cont">
+              <div class="post-prev-date-cont">
+                <span class="blog2-date-numb">21</span><span class="blog2-month">October</span>
+              </div>
+              <div class="post-prev-title">
+                <h3><a href="#">Time For Minimalism</a></h3>
+                <div class="post-prev-info">
+                  <a href="#">design</a><span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">john
+                    doe</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="blog2-post-prev-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aspernatur mollitia amet, ipsam
+                ipsum error ut ullam accusantium repellendus culpa distinctio reprehenderit, tenetur voluptatibus
+                dolorum est ea nemo nostrum? Dicta molestias placeat voluptatum illum ducimus!
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Post Item 2 -->
+        <div class="col-md-12 wow fadeIn pl-0">
+          <div class="row">
+
+            <div class="col-md-4 blog2-post-title-cont">
+              <div class="post-prev-date-cont">
+                <span class="blog2-date-numb">17</span><span class="blog2-month">August</span>
+              </div>
+              <div class="post-prev-title">
+                <h3><a href="blog-single-sidebar-right.html">New Trends In Web</a></h3>
+                <div class="post-prev-info">
+                  <a href="#">design</a><span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">john
+                    doe</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="blog2-post-prev-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi modi cupiditate ipsam
+                molestiae eveniet incidunt nostrum atque alias dicta? Quos, quisquam iusto numquam dicta vel voluptatem
+                aperiam voluptas similique!
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Post Item 3 -->
+        <div class="col-md-12 wow fadeIn pl-0">
+          <div class="row">
+
+            <div class="col-md-4 blog2-post-title-cont">
+              <div class="post-prev-date-cont">
+                <span class="blog2-date-numb">8</span><span class="blog2-month">August</span>
+              </div>
+              <div class="post-prev-title">
+                <h3><a href="blog-single-sidebar-right.html">The Sound Of Life</a></h3>
+                <div class="post-prev-info">
+                  <a href="#">design</a><span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">john
+                    doe</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="blog2-post-prev-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta sapiente nemo et illo vel reprehenderit?
+                Recusandae soluta rem voluptatum, distinctio repudiandae, quos harum nostrum omnis debitis nobis quam
+                voluptatibus temporibus veritatis a eveniet sequi laborum. Possimus, harum! Similique ad mollitia in
+                ducimus.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-dec wow fadeIn">
+    <img src="assets/images/footer-dec.png" alt="">
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about footer-item wow fadeIn">
+            <div class="logo">
+              <a href="#"><img src="assets/images/logo.png" alt="R-shipping"></a>
+            </div>
+            <p>Moldova, Chișinău, str. Sarmizegetusa 18.</p>
+            <p>C/F: 1010600007485 “ENTERLOG” SRL.</p>
+            <a href="#">
+              <p>+(373) 78 888 828</p>
+            </a>
+            <a href="#">
+              <p>info@exemplu.com</p>
+            </a>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 d-none d-sm-block">
+          <div class="services footer-item wow fadeIn">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Import/Export FCL</a></li>
+              <li><a href="#">Import/Export LCL</a></li>
+              <li><a href="#">CIF/CFR</a></li>
+              <li><a href="#">Comanda Marfei</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 d-none d-sm-block">
+          <div class="community footer-item wow fadeIn">
+            <h4>Utilites</h4>
+            <ul>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Policy of Cookies</a></li>
+              <li><a href="#">Terms of refunds</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="subscribe-newsletters footer-item wow fadeIn">
+            <h4>Subscribe Newsletters</h4>
+            <p>Get our latest news and ideas to your inbox</p>
+            <form action="#" method="get">
+              <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+              <button type="submit" id="form-submit" class="main-button "><i class="far fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright wow fadeIn">
+            Copyright &copy; <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | Created by <a href="https://border.md" target="_blank">Border.md</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Volume Calculator -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Volume Calculator</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form class="volume-calc" action="#">
+        <div class="row">
+          <div class="col-12">
+            <input type="number" name="lenght" id="lenghtCalc" placeholder="Lenght" required>
+            <input type="number" name="width" id="widthCalc" placeholder="Width" required>
+            <input type="number" name="height" id="heightCalc" placeholder="Height" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <button type="submit" id="form-submit" class="main-button">Calculate</button>
+          </div>
+          <div class="col-6 text-right">
+            <p>Result: 322</p>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-12 volume-calc-exemple">
+          <h4>Rectangular Tank</h4>
+          <p class="text-justify">A rectangular tank is a generalized form of a cube, where the sides can have varying
+            lengths. It is bounded
+            by six faces, three of which meet at its vertices, and all of which are perpendicular to their respective
+            adjacent faces. The equation for calculating the volume of a rectangle is shown below:
+          </p>
+          <span>volume= length × width × height</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    // Acc
+    $(document).on("click", ".naccs .menu div", function () {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+        $(".naccs .menu div").removeClass("active");
+        $(".naccs ul li").removeClass("active");
+
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+        var listItemHeight = $(".naccs ul")
+          .find("li:eq(" + numberIndex + ")")
+          .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+      }
+    });
+  </script>
+</body>
+
+</html>
