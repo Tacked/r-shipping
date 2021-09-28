@@ -1108,8 +1108,8 @@ tracking-tabs
   color: #afafaf;
 }
 
-.tracking-tabs form button,
-.order-tabs form button {
+.tracking-tabs form .main-button,
+.order-tabs form .main-button {
   display: inline-block;
   background-color: #03a4ed;
   font-size: 12px;
@@ -1125,7 +1125,7 @@ tracking-tabs
   transition: all .3s;
 }
 
-.tracking-tabs form button:hover {
+.tracking-tabs form .main-button:hover {
   background-color: #22314e;
 }
 
@@ -1724,7 +1724,7 @@ news-single
 }
 
 .single-news-page .comment-item {
-	padding: 1rem;
+  padding: 1rem;
   margin-bottom: 2rem;
   background-color: #fff;
   box-shadow: 0 15px 30px rgb(58 112 191 / 10%);
@@ -1735,7 +1735,7 @@ news-single
 }
 
 .single-news-page .comment-item:first-child {
-	border-top: none;
+  border-top: none;
   margin-top: 2rem;
 }
 
@@ -1749,7 +1749,7 @@ news-single
   display: inline-block;
 }
 
-.single-news-page .comment-item .comment-body, 
+.single-news-page .comment-item .comment-body,
 .single-news-page .post-author-container .author-body {
   display: inline-block;
   padding: 1rem 0;
@@ -1759,7 +1759,7 @@ news-single
   margin-left: 4rem;
 }
 
-.single-news-page .comment-item .comment-body .comment-author{
+.single-news-page .comment-item .comment-body .comment-author {
   margin-right: 20px;
 }
 
@@ -1806,24 +1806,123 @@ news-single
 
 @media only screen and (max-width: 1024px) {
   .comment-avatar {
-    width:50px;
+    width: 50px;
     margin-right: 10px;
   }
+
   .comment-reply {
-    margin-left:-35px;
-  } 
+    margin-left: -35px;
+  }
 }
+
 @media only screen and (max-width: 480px) {
   .comment-avatar {
-    width:40px;
+    width: 40px;
     margin-right: 10px;
     margin-top: 7px;
   }
+
   .post-author-avatar {
     margin-bottom: 10px;
     float: none;
   }
 }
+
+/* 
+---------------------------------------------
+request page
+--------------------------------------------- 
+*/
+
+.request {
+  margin-top: 1rem;
+}
+
+.request .request__item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgb(58 112 191 / 10%);
+  padding: 2rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.request .request__item h5 {
+  margin-bottom: 2rem;
+}
+
+.request .request__item label {
+  width: 150px;
+  font-size: 13px;
+}
+
+.request .request__item .small-width {
+  width: 100px;
+}
+
+.request .request__item .request_input,
+.request .request__item select {
+  background-color: #eee;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  width: 60%;
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+.request .request__item select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.request .request__dates {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgb(58 112 191 / 10%);
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+}
+
+.request .request__dates .request__dates_input {
+  border: none;
+  border-right: 1px solid #ddd;
+  width: 100%;
+  line-height: 40px;
+  font-size: 13px;
+}
+
+.request .request__item .required {
+  position: relative;
+  background-color: #ff685f;
+  width: 5px;
+  height: 5px;
+  right: -120px;
+  top: 10px;
+  display: block;
+}
+
+#datepicker {
+  width: 100%;
+
+}
+
+#datepicker>span:hover {
+  cursor: pointer;
+}
+
+#datepicker .request__dates_input {
+  border: 0;
+  color: #777;
+}
+
+#datepicker i {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #afafaf;
+}
+
+
 /* 
 ---------------------------------------------
 contact
@@ -1871,7 +1970,7 @@ contact
 .contact-form textarea:focus {
   outline: none;
   box-shadow: none;
-} 
+}
 
 .contact-form button {
   background-color: #22314e;
@@ -2544,7 +2643,7 @@ responsive
   .single-news-page {
     padding: 100px 0;
   }
-  
+
   .single-news-page .post-author-container {
     margin: 0 0 3rem 0;
   }
