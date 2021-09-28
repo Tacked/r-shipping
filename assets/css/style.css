@@ -321,6 +321,23 @@ body {
   letter-spacing: 0.25px;
 }
 
+.send-button {
+  background-color: #03a4ed;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.send-button:hover {
+  background-color: #22314e;
+  color: #fff;
+}
+
 /* 
 ---------------------------------------------
 header
@@ -1108,21 +1125,10 @@ tracking-tabs
   color: #afafaf;
 }
 
-.tracking-tabs form .main-button,
-.order-tabs form .main-button {
+.tracking-tabs form .send-button,
+.order-tabs form .send-button {
   display: inline-block;
-  background-color: #03a4ed;
-  font-size: 12px;
-  font-weight: 700;
-  color: #fff;
   margin-right: 10px;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 10px;
-  letter-spacing: 0.1em;
-  border: none;
-  text-align: center;
-  transition: all .3s;
 }
 
 .tracking-tabs form .main-button:hover {
@@ -1834,6 +1840,10 @@ request page
 --------------------------------------------- 
 */
 
+.request-page {
+  padding-top: 160px;
+}
+
 .request {
   margin-top: 1rem;
 }
@@ -1903,7 +1913,6 @@ request page
 
 #datepicker {
   width: 100%;
-
 }
 
 #datepicker>span:hover {
@@ -2671,5 +2680,33 @@ responsive
 
   .contact-form button {
     width: 100%;
+  }
+
+  .request-page {
+    padding: 80px 0 100px 0;
+  }
+
+  .request .request__item .request_input,
+  .request .request__item select {
+    width: 100%;
+  }
+
+  .request .request__item label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .request .request__dates {
+    padding: 2rem 1.5rem;
+  }
+
+  .request .request__dates .request__dates_input {
+    border: 1px solid #ddd !important;
+    border-radius: 10px !important;
+    background-color: #eee;
+    padding: 0px 20px;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 1rem;
   }
 }
