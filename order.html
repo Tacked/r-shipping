@@ -53,10 +53,10 @@
                         <div class="sign-button d-block d-sm-none"><a href="login.html">Sign In</a></div>
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#offcanvasExample" data-bs-toggle="offcanvas" role="button"
                                     aria-controls="offcanvasExample">Calculator</a></li>
-                            <li><a href="order.html">Order</a></li>
+                            <li><a href="order.html" class="active">Order</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="news.html">News</a></li>
                             <li><a href="about.html">About Us</a></li>
@@ -91,7 +91,7 @@
 
         <div class="container">
             <div class="request">
-                <form action="" class="request-form">
+                <form action="#" id="request_form" class="request-form" method="POST">
                     <div class="request__item">
                         <div class="row">
                             <div class="col-md-12">
@@ -101,9 +101,9 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="required"></div>
-                                <label for="request_name">Company Name:</label>
-                                <input class="request_input" name="name" id="request_name" type="text"
-                                    placeholder="Google Inc." required>
+                                <label for="request_company">Company Name:</label>
+                                <input class="request_input" name="company" autocomplete="off" id="request_company"
+                                    type="text" placeholder="Google Inc." required>
                             </div>
                             <div class="col-md-6">
                                 <div class="required"></div>
@@ -116,14 +116,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="required"></div>
-                                <label for="request_name">Phone Number:</label>
-                                <input class="request_input" name="name" id="request_name" type="text"
+                                <label for="request_phone">Phone Number:</label>
+                                <input class="request_input" name="phone" id="request_phone" type="text"
                                     placeholder="+(373) 78 888 222" required>
                             </div>
                             <div class="col-md-6">
                                 <div class="required"></div>
-                                <label for="request_name">E-mail Adress:</label>
-                                <input class="request_input" name="name" id="request_name" type="text"
+                                <label for="request_email">E-mail Adress:</label>
+                                <input class="request_input" name="email" id="request_email" type="text"
                                     placeholder="andrew_johnson@example.com" required>
                             </div>
                         </div>
@@ -142,20 +142,27 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label w-50" for="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="create_account">
+                                <label class="form-check-label" for="create_ccount">
                                     Create an account
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="request__dates">
+                        <div class="row d-md-none d-block">
+                            <div class="col-12">
+                                <h5>Billing Information</h5>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-5">
-                                <input type="text" class="request__dates_input" placeholder="Origin of shipment">
+                                <input type="text" name="origin" class="request__dates_input"
+                                    placeholder="Origin of shipment">
                             </div>
                             <div class="col-md-4">
-                                <input type="text" class="request__dates_input" placeholder="Destination of shipment">
+                                <input type="text" name="destination" class="request__dates_input"
+                                    placeholder="Destination of shipment">
                             </div>
                             <div class="col-md-3">
                                 <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
@@ -183,8 +190,8 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="cargo_type">Container Type:</label>
-                                <select name="cargo_type" id="cargo_type">
+                                <label for="container_type">Container Type:</label>
+                                <select name="container_type" id="container_type">
                                     <option selected>Select container type</option>
                                     <option value="1">20</option>
                                     <option value="2">40</option>
@@ -194,29 +201,29 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <label for="request_name">Cargo Name:</label>
-                                <input class="request_input" name="name" id="request_name" type="text"
-                                    placeholder="Football equipement" required>
+                                <label for="cargo_name">Cargo Name:</label>
+                                <input class="request_input" name="name" autocomplete="off" id="cargo_name" type="text"
+                                    placeholder="Football equipement">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
                                 <div class="required"></div>
-                                <label for="request_name">Volume Cargo:</label>
-                                <input class="request_input" name="name" id="request_name" type="text"
+                                <label for="volume_cargo">Volume Cargo:</label>
+                                <input class="request_input" name="volume" id="volume_cargo" type="text"
                                     placeholder="133 (cbm)" required>
                             </div>
                             <div class="col-6">
                                 <div class="required"></div>
-                                <label for="request_name">Weight Cargo:</label>
-                                <input class="request_input" name="name" id="request_name" type="text"
+                                <label for="weight_cargo">Weight Cargo:</label>
+                                <input class="request_input" name="weight" id="weight_cargo" type="text"
                                     placeholder="1240 (kg)" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label w-50" for="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="insurance">
+                                <label class="form-check-label w-50" for="insurance">
                                     I need insurance for cargo.
                                 </label>
                             </div>
@@ -225,7 +232,8 @@
                     <div class="request__item">
                         <div class="row">
                             <div class="col-md-12 text-md-end text-center">
-                                <a type="submit" id="form-submit" class="send-button">Send Request</a>
+                                <button href="javascript:$('request_form').submit();"
+                                    class="send-button">Send Request</button>
                             </div>
                         </div>
                     </div>
@@ -362,7 +370,6 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
-
     <script>
         $(function () {
             $("#datepicker").datepicker({
